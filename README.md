@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# Facial Recognition Login App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este es un proyecto de [Expo](https://expo.dev) creado con [`create-expo-app`](https://www.npmjs.com/package/create-expo-app), que implementa inicio de sesión mediante **reconocimiento facial** con animaciones interactivas y efectos visuales.
 
-## Get started
+## Características
 
-1. Install dependencies
+- Inicio de sesión mediante usuario y contraseña.
+- Escaneo facial simulado para autenticación automática.
+- Animaciones de interfaz:
 
-   ```bash
-   npm install
-   ```
+  - Círculo de escaneo que pulsa y brilla.
+  - Texto parpadeante durante el escaneo.
+  - Botón “respirando” al estilo animado.
 
-2. Start the app
+- Gestión de permisos de cámara con [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/).
 
-   ```bash
-   npx expo start
-   ```
+## Instalación
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Instala las dependencias:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Inicia la aplicación:
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Opcion de ejecución:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo Go](https://expo.dev/go)
 
-## Join the community
+## Uso
 
-Join our community of developers creating universal apps.
+1. Abre la app y concede permiso para acceder a la cámara.
+2. Ingresa tu usuario y contraseña.
+3. Presiona **Iniciar sesión** para activar el escaneo facial.
+4. Observa las animaciones mientras se simula la autenticación facial.
+5. Una vez completado, serás redirigido a la pantalla de bienvenida.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Estructura del proyecto
+
+- `App.js` – Archivo principal con la lógica de UI y animaciones.
+- `styles` – Estilos usando `StyleSheet` de React Native.
+- `CameraView` y `useCameraPermissions` – Integración de la cámara frontal para escaneo.
+
+## Recursos útiles
+
+- [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/)
+- [React Native Animations](https://reactnative.dev/docs/animations)
+- [Expo Docs](https://docs.expo.dev/)
+- [Expo Go](https://expo.dev/go)
