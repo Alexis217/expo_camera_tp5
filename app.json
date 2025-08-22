@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "expo_camera",
-    "slug": "expo_camera",
+    "name": "Expo_camarita",
+    "slug": "FaceId",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "expocamera",
+    "scheme": "faceid",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.FaceId"
     },
     "web": {
       "bundler": "metro",
@@ -38,5 +39,15 @@
     "experiments": {
       "typedRoutes": true
     }
+  },
+
+ 
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir que $(PRODUCT_NAME) acceda a la cámara"
+        }
+      ]
+    ]
   }
-}
